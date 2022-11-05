@@ -1,0 +1,63 @@
+
+:root{
+    --maincolor:#29335C;
+    --maincolorlight:#6c7cbf;
+    --seondarycolor:#DB2B39;
+    --text-color:#fff;
+}
+
+.container-errorboundarr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--maincolorlight);
+    flex-direction: column;
+}
+.error-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--maincolorlight);
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.error-container button{
+    font-size: 20px;
+    padding: 0 2rem;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    /* border: none; */
+    border-radius: 5px;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.link{
+    font-size: 20px;
+    padding:  .2rem;
+    outline: none;
+    border: 1px solid white;
+    color: rgb(49, 77, 202);
+    text-decoration: none;
+    /* border: none; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container-errorboundarr button{
+    font-size: 20px;
+    padding: 0 2rem;
+    outline: none;
+    color: rgb(49, 77, 202);
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.container-errorboundarr, h4 ,h5{
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: var(--text-color)
+}
