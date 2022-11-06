@@ -14,6 +14,9 @@ const Counter = () => {
   const InputRef = useRef()
 
     const Decrement =()=>{
+      if(Initialstate.count===0 ){
+        return
+      }
         dispatch({type:ACTIONS.DECREMENT})
     }
     const Increment =()=>{

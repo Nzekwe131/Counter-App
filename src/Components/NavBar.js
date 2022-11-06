@@ -12,7 +12,8 @@ const NavBar = () => {
   }
 
   return (
-    <header className= 'header'>
+   <>
+ <header className= 'header'>
       <h1>MICKY</h1>
    
       <nav ref={NavRef}>
@@ -31,8 +32,15 @@ const NavBar = () => {
        onClick={shownavlink}>
       <MenuOpenIcon/>
       </button>
-     
     </header>
+    <div className= 'about-app'>
+    <h1>
+      welcome to our site 
+      </h1>
+    </div>
+   </>
+   
+
   )
 }
 
