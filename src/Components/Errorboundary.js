@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import './Errorboundary.css'
 import {Link} from 'react-router-dom';
 import { ErrorBoundary } from "react-error-boundary";
+import {Helmet} from "react-helmet-async";
 
 
 
@@ -31,6 +32,13 @@ function Bomb() {
   
   return (
     <>
+    <Helmet>
+  <title>Errorboundary</title>
+  <meta
+    name='description'
+    content='displays our Errorboundary component'/>
+     <link ref='canonical' href='/error'/>
+  </Helmet>
  <div >
 <Link to='/' className='link'>Home</Link>
 </div>

@@ -1,15 +1,17 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import {Link} from 'react-router-dom';
 import { useReducer } from 'react'
  import './Counter.css'
 import Reducer from './Reducer';
 import { ACTIONS } from './Reducer';
+import {Helmet} from "react-helmet-async";
 
 
 
 // this is our custom hook
 
 const Counter = () => {
+  const InputRef = useRef()
 
     const Decrement =()=>{
         dispatch({type:ACTIONS.DECREMENT})
@@ -25,13 +27,21 @@ const Counter = () => {
     const SetValue =(event)=>{
         event.preventDefault()
       dispatch({type:ACTIONS.SETVALUE,payload:Number(event.target.number.value)})
+      InputRef.current.value=''
     }
 
 
     const [Initialstate,dispatch]=useReducer(Reducer,{count:0})
   return (
- 
-<>
+    <>
+<Helmet>
+  <title>Counter section</title>
+  <meta
+    name='description'
+    content='displays our counterApp component'/>
+     <link ref='canonical' href='/counter'/>
+  </Helmet>
+
 <div >
 <Link to='/' className='link'>Home</Link>
 </div>
@@ -52,6 +62,7 @@ const Counter = () => {
   <form  onSubmit={SetValue} >
 
    <input
+   ref={InputRef}
     placeholder='set value'
     type='number'
     name='number'
