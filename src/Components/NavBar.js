@@ -1,5 +1,6 @@
 import React,{useRef} from 'react'
-import {FaBars,FaTimes} from 'react-icons/fa'
+import CloseIcon from '@mui/icons-material/Close';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import {Link} from 'react-router-dom';
 import './Nav.css'
 
@@ -22,13 +23,13 @@ const NavBar = () => {
     <button
     className='nav-btn nav-close'
      onClick={shownavlink}>
-        <FaTimes/>
+        <CloseIcon/>
     </button>
       </nav>
       <button
       className='nav-btn'
        onClick={shownavlink}>
-      <FaBars/>
+      <MenuOpenIcon/>
       </button>
      
     </header>
