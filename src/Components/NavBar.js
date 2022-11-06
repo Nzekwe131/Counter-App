@@ -12,9 +12,9 @@ const NavBar = () => {
 
   return (
     <header className= 'header'>
-      <h2>Counter</h2>
+      <h1>MICKY</h1>
    
-      <nav ref={NavRef} >
+      <nav ref={NavRef}>
       <Link to='counter'>Counter</Link>
       <Link to='/errorpage'>Errropage</Link>
       <Link to='error'>Errorboundary</Link>

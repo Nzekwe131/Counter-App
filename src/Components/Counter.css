@@ -13,31 +13,53 @@
 }
 
 .container{
+    background-color:var(--maincolor);
+    color: var(--text-color);
+ 
+}
+
+.value-sec{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--maincolorlight);
-    color: var(--text-color);
 }
 
-.container .link{
+ .link{
     font-size: 16px;
     padding: 1rem;
-    color: navy;
-    margin: 2rem;
+    color: rgb(66, 32, 216);
+    margin: 2rem 1rem;
     cursor: pointer;
 }
 
 input{
-    
-    font-size: 17px;
+font-size: 17px;
  padding: .6rem;
  outline: none;
 }
+
+.input-section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    margin-top: 1rem;
+}
+
+.input-section form button{
+    font-size: 20px;
+    padding: 1rem;
+    color: rgb(66, 32, 216);
+    margin: 2rem 1rem;
+    cursor: pointer;
+
+}
+
 .container button{
     font-size: 20px;
     padding: 1rem;
-    color: navy;
+    color: rgb(66, 32, 216);
     margin: 2rem;
     cursor: pointer;
 }
@@ -46,14 +68,14 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--maincolorlight);
+    background-color:var(--maincolor);
     color: var(--text-color);
 }
 
 .reset button{
     font-size: 20px;
     padding: 1rem;
-    color: navy;
+    color: rgb(66, 32, 216);
     cursor: pointer;
 }
 
@@ -63,11 +85,35 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .errorpage-cont .link{
     font-size: 20px;
     padding: 1rem;
-    color: navy;
+    color: rgb(66, 32, 216);
+    margin: 1rem;
     cursor: pointer;
+}
+
+.home-cont{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: var(--maincolorlight);
+    color: var(--text-color);
+}
+
+.home-cont h1{
+    width: 30rem;
+    margin-bottom:2rem ;
+}
+
+.home-cont ul,li{
+    list-style: none;
+    text-transform: uppercase;
+    margin: 1rem;
 }

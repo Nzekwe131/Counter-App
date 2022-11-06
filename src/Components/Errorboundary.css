@@ -5,12 +5,14 @@
     --seondarycolor:#DB2B39;
     --text-color:#fff;
 }
+body{
+    background-color:var(--maincolor);
+}
 
-.container-errorboundarr{
+.container-errorboundary{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--maincolorlight);
     flex-direction: column;
 }
 .error-container{
@@ -36,16 +38,16 @@
 
 .link{
     font-size: 20px;
-    padding:  .2rem;
+    padding: 0 1rem;
     outline: none;
     border: 1px solid white;
-    color: rgb(49, 77, 202);
+    color: rgb(20, 59, 233);
     text-decoration: none;
-    /* border: none; */
+  background-color: aliceblue;
     border-radius: 5px;
     cursor: pointer;
 }
-.container-errorboundarr button{
+.container-errorboundary button{
     font-size: 20px;
     padding: 0 2rem;
     outline: none;
@@ -56,7 +58,7 @@
     cursor: pointer;
 }
 
-.container-errorboundarr, h4 ,h5{
+.container-errorboundary, h4 ,h5{
     line-height: 1.5;
     margin-top: 1rem;
     color: var(--text-color)

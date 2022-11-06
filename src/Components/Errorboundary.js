@@ -21,22 +21,27 @@ const ErrorFallback = ({ error, resetErrorBoundary }) => {
 const Errorboundary = () => {
   const [explode, setExplode] = useState(false);
 
-         
+         const test={
+          description:'Errorboundary section'
+         }
+
 function Bomb() {
   throw new Error("💥 CABOOM 💥");
 }
   
   return (
-    <div className='container-errorboundarr'>
+    <>
+ <div >
+<Link to='/' className='link'>Home</Link>
+</div>
+ <div className='container-errorboundary'>
     <ErrorBoundary 
-  
+    
     FallbackComponent={ErrorFallback}
       onReset={() => setExplode(false)}
       resetKeys={[explode]}
    >
-        <Link to='/' className='link'>home</Link>
-
-      <h5>Errorboundary section</h5>
+      <h5>{test.description.toUpperCase()}</h5>
       <h4>Error will be thrown once button is clicked</h4>
       <div>
     {explode ? <Bomb /> : null}
@@ -44,8 +49,8 @@ function Bomb() {
     </div>
    </ErrorBoundary>
    </div>
-
-    
+    </>
+   
   )
 }
 
